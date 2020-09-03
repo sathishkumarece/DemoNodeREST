@@ -1,0 +1,31 @@
+{
+  "name": "demonoderest",
+  "version": "1.0.0",
+  "description": "Demo application shows how Node JS application works with MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathishkumarece/DemoNodeREST.git"
+  },
+  "keywords": [
+    "Node",
+    "Js",
+    "Express",
+    "MySQL"
+  ],
+  "author": "Sathishkumar NATARAJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sathishkumarece/DemoNodeREST/issues"
+  },
+  "homepage": "https://github.com/sathishkumarece/DemoNodeREST#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1"
+  }
+}
