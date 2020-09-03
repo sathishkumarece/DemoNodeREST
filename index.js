@@ -1,7 +1,10 @@
-//Importing required dependency modules
+//Importing required dependency modules - thirdparty
 const express = require('express');
 const bodyParser = require('body-parser'); 
 const methodOverride = require('method-override');
+
+//Importing required dependency modules - Application specific
+const apiRouter = require('./routes/api-route');
 
 //Creating instance of express
 const app = express();
@@ -15,8 +18,12 @@ app.use(methodOverride());
 
 app.get('/', (req, res) => {
     res.send('RESTful API listening!')
-  })
-  
+})
+
+console.log(process.env);
+
+//Routing to specific router
+app.use('/api/employee', apiRouter);
 
 //Configuring port
 const port = process.env.PORT || 8181
